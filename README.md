@@ -6,9 +6,7 @@
 
 Mini App para saber el Dolar Oficial y Blue de Argentina.
 
-
-
-
+Consumiendo la API Actual (v2) de https://bluelytics.com.ar/#!/api 
 
 ## Como ejecutar la aplicación:
 
