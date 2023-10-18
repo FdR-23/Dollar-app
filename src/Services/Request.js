@@ -1,5 +1,5 @@
 //import { parseString } from "xml2js";
-const Urlbluelytics = "https://api.bluelytics.com.ar/v2/latest";
+
 
 // export const getAllDolar = async () => {
 //   const url = "https://www.dolarsi.com/api/dolarSiInfo.xml";
@@ -23,13 +23,13 @@ const Urlbluelytics = "https://api.bluelytics.com.ar/v2/latest";
 //     throw new Error(`Error al cargar el archivo XML: ${error}`);
 //   }
 // };
+const Urlbluelytics = "https://api.bluelytics.com.ar/v2/latest";
 
-export const getAllDollarsAndEuro = async (controller) => {
-    const { signal } = controller;
+export const getAllDollarsAndEuro = async () => {
+
     try {
         const response = await fetch(Urlbluelytics, {
             method: "GET",
-            signal: signal,
         })
         if (!response.ok) {
             throw new Error(`Error en la solicitud: ${response.status}`);
